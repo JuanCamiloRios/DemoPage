@@ -8,7 +8,7 @@
         <Button x:Name="btn1"
                 Clicked="btn_Clicked"
                 Text="boton 1" />
-       
+        
     </StackLayout>
  </ScrollView>
 </ContentPage>

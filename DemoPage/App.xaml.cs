@@ -10,9 +10,11 @@ namespace DemoPage
         public App()
         {
             InitializeComponent();
-
-            MainPage = new DemoMasterDetails();
-        }
+            var navigationPage = new NavigationPage(new demoPage());
+            navigationPage.BarBackgroundColor = Color.Aquamarine;
+            navigationPage.BarTextColor = Color.Black;
+            MainPage = navigationPage;
+        } 
 
         protected override void OnStart()
         {

@@ -5,9 +5,9 @@ using Xamarin.Forms;
 
 namespace DemoPage
 {
-    public partial class NavigationPage : ContentPage
+    public partial class Pagina2 : ContentPage
     {
-        public NavigationPage()
+        public Pagina2()
         {
             InitializeComponent();
         }
