@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CarouselPage xmlns="http://xamarin.com/schemas/2014/forms" 
+              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+              xmlns:local="clr-namespace:DemoPage"
+              x:Class="DemoPage.Carusel">
+
+    
+    <ContentPage>
+         <StackLayout HorizontalOptions="Center"
+                      VerticalOptions="Center"
+                      >
+               <Image Source="Carro1.png"/>
+         </StackLayout>
+    </ContentPage>
+
+
+    
+     <ContentPage>
+         <StackLayout HorizontalOptions="Center"
+                      VerticalOptions="Center"
+                      >
+               <Image Source="Carro2.png"/>
+         </StackLayout>
+    </ContentPage>
+
+
+
+</CarouselPage>

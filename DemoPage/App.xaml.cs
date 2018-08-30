@@ -10,7 +10,7 @@ namespace DemoPage
         public App()
         {
             InitializeComponent();
-            var navigationPage = new NavigationPage(new demoPage());
+            var navigationPage = new NavigationPage(new Carusel());
             navigationPage.BarBackgroundColor = Color.Aquamarine;
             navigationPage.BarTextColor = Color.Black;
             MainPage = navigationPage;
