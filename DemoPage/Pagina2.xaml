@@ -2,9 +2,17 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="DemoPage.Pagina2">
     <ContentPage.Content>
         <StackLayout>
-        <Label Text="Segunda pajina" />
-        <Button BackgroundColor="Red"/>
-        <Button/>
+        <Label x:Name="Label"  
+               Text="Segunda pajina"
+               VerticalOptions="Center"
+               XAlign="Center"/>
+        <Button Text="boton 1"
+                BackgroundColor="Red"
+                VerticalOptions="EndAndExpand"
+                Clicked="Handle_Clicked"/>
+        <Button Text="boton 2" 
+                BackgroundColor="Black"
+                Clicked="Handle_Clicked_1"/>
       </StackLayout>
     </ContentPage.Content>
 </ContentPage>

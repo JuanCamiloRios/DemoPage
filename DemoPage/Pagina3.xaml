@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="DemoPage.Pagina3">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Pagina tres"/>
+            <StackLayout Orientation="Horizontal">
+                <Button Text="Incio"
+                        x:Name="Btn1"
+                        Clicked="Btn1_Clicked"/>
+                <Button Text="Anterior"
+                        x:Name="Btn2"
+                        Clicked="Btn2_Clicked"/>
+                <Button Text="Siguiente"
+                        x:Name="Btn3"
+                        Clicked="Btn3_Clicked"/>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
