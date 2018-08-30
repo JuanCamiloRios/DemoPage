@@ -12,19 +12,20 @@ namespace DemoPage
             InitializeComponent();
         }
 
-        void Btn1_Clicked(object sender, System.EventArgs e)
+        private async void Btn1_Clicked(object sender, System.EventArgs e)
         {
-            throw new NotImplementedException();
+            await Navigation.PopToRootAsync();
         }
 
-        void Btn2_Clicked(object sender, System.EventArgs e)
+        private async void Btn2_Clicked(object sender, System.EventArgs e)
         {
-            throw new NotImplementedException();
+              await Navigation.PopAsync();
         }
 
-        void Btn3_Clicked(object sender, System.EventArgs e)
+        private async void Btn3_Clicked(object sender, System.EventArgs e)
         {
-            throw new NotImplementedException();
+            
+            await Navigation.PushModalAsync(new Pagina4());
         }
     }
 }
