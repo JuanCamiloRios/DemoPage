@@ -15,28 +15,42 @@
             <x:Double x:Key="Rot">
                    150
             </x:Double>
-
-
-
-            
+            <Style x:Key="StyleBtn1"
+                   TargetType="Button">
+                <Setter Property="HorizontalOptions" Value="{StaticResource HorOpt}"/>
+                <Setter Property="VerticalOptions" Value="{StaticResource VerOpt}"/>
+                <Setter Property="Rotation" Value="50"/>
+            </Style>
+            <OnPlatform x:Key="Plataformas"
+                        x:TypeArguments="Color">
+                   
+                <On Platform="iOS" Value="Green"/>
+                <On Platform="Android" Value="Blue"/>
+            </OnPlatform>
         </ResourceDictionary>
     </ContentPage.Resources>
+
     <ContentPage.Content>
+        <StackLayout>
         <Button Text="Clasica"
                 BorderWidth="3"
                 TextColor="Red"
-                FontSize="24"/>
+                FontSize="24"
+                Style="{StaticResource StyleBtn1}"/>
         <Button Text="Pop"
                 HorizontalOptions="Center"
                 VerticalOptions="CenterAndExpand"
                 BorderWidth="3"
                 Rotation="-15"
-                TextColor="Red"/>
+                TextColor="Red"
+                FontSize="{StaticResource FontSize}"/>
         <Button Text="Rock"
                 HorizontalOptions="Center"
                 VerticalOptions="CenterAndExpand"
                 BorderWidth="3"
                 FontSize="24"
-                TextColor="Red"/>
+                Rotation="{StaticResource Rot}"
+                TextColor="{StaticResource Plataformas}"/>
+      </StackLayout>
     </ContentPage.Content>
 </ContentPage>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MasterDetailPage xmlns="http://xamarin.com/schemas/2014/forms" 
+                  xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                  xmlns:local="clr-namespace:DemoPage"
+                  x:Class="DemoPage.DemoMasterDetails"
+                  >
+ <MasterDetailPage.Master>
+ <!--<ContentPage>
+        <StackLayout>
+                <Button Text="Soy el maestro"
+                        BorderColor="Green"
+                        TextColor="Black"/>
+            </StackLayout>
+     </ContentPage>-->
+        <local:Maestro/>
+ </MasterDetailPage.Master>
+
+  <MasterDetailPage.Detail>
+      <!--<ContentPage>
+        <StackLayout>
+                  <Button Text="Soy el detalle"
+                        BorderColor=" Gray"
+                        TextColor="Maroon"/>
+            </StackLayout>
+        </ContentPage> -->
+      <local:detalle/>
+  </MasterDetailPage.Detail>  
+</MasterDetailPage>

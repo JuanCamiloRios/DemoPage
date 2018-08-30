@@ -16,10 +16,10 @@ namespace DemoPage
 
         void btn_Clicked(object sender, System.EventArgs e)
         {
-            panel.Children.add(new Button()
-            {
-                Text = $"boton{panel.Children.Count + 1}"
-            });
+            panel.Children.Add(new Button()
+          {
+              Text = $"boton{panel.Children.Count + 1}"
+          });
         }
     }
 }
